@@ -1,0 +1,62 @@
+html{
+    font-size: 16px;
+}
+.title-container{
+    position: relative;
+    text-align: center;
+    img{
+        max-width: 60%;
+    }
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1{
+            font-size: 4.0rem;
+            color: white;
+            font-weight: bold;
+            @media @mobile{
+                font-size: 2.0rem;
+            }
+        }
+        button{
+            .custom-button(2.0rem, 5px 15px);
+            @media @mobile{
+                .custom-button(1.0rem, 2px 6px);
+            }
+        }
+    }
+}
+.artists-container{
+    .flex-row();
+    justify-content: space-evenly;
+    padding: 20px;
+    img{
+        max-width: 300px;
+        border-radius: 5px;
+    }
+    .artist{
+        max-width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media @mobile{
+            max-width: 100%;
+        }
+        a{
+            .link-text();
+            font-size: 1.4rem;
+            padding: 15px;
+        }
+        .bio{
+            font-size: 1rem;
+            text-align: center;
+            }
+        }
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
