@@ -1,0 +1,154 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+nav {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+nav div {
+  border-right: 2px solid;
+}
+html {
+  font-size: 16px;
+}
+.title-container {
+  position: relative;
+  text-align: center;
+}
+.title-container img {
+  max-width: 60%;
+}
+.title-container .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-container .centered h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+}
+.title-container .centered button {
+  font-size: 2rem;
+  padding: 5px 15px;
+}
+.artists-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.artists-container img {
+  max-width: 300px;
+  border-radius: 5px;
+}
+.artists-container .artist {
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.artists-container .artist a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  padding: 15px;
+}
+.artists-container .artist .bio {
+  font-size: 1rem;
+  text-align: center;
+  max-height: 50%;
+}
