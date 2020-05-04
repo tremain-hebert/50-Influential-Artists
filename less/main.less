@@ -16,16 +16,20 @@ html{
             font-size: 4.0rem;
             color: white;
             font-weight: bold;
+            @media @mobile{
+                font-size: 2.0rem;
+            }
         }
         button{
-            font-size: 2.0rem;
-            padding: 5px 15px;
+            .custom-button(2.0rem, 5px 15px);
+            @media @mobile{
+                .custom-button(1.0rem, 2px 6px);
+            }
         }
-      }
+    }
 }
 .artists-container{
-    display: flex;
-    flex-direction: row;
+    .flex-row();
     justify-content: space-evenly;
     padding: 20px;
     img{
@@ -37,15 +41,22 @@ html{
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media @mobile{
+            max-width: 100%;
+        }
         a{
-            text-decoration: none;
-            color: black;
+            .link-text();
             font-size: 1.4rem;
             padding: 15px;
         }
         .bio{
             font-size: 1rem;
             text-align: center;
+            }
         }
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
